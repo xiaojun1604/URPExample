@@ -27,6 +27,7 @@ public class Test : MonoBehaviour
         string albedoTexPath = assetRoot + "/texarr.asset";
         //loadTexArray(albedoTexPath);
         //loadTexArray();
+        slider.onValueChanged.AddListener(sliderChange);
     }
 
     public void sliderChange(float num)
